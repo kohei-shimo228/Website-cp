@@ -1,0 +1,63 @@
+@charset "UTF-8";
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav {
+  display: inline;
+  width: 100%;
+  height: 70px;
+  background-color: rgb(25, 25, 25);
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding-top: 5px;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+header nav i {
+  /*display: block;*/
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  margin-right: 1em;
+  margin-left: 1em;
+  font-size: 120%;
+  transition: all ease 0.5s 0s;
+}
+header img {
+  margin-left: 20em;
+  margin-right: 40em;
+}
+header ul {
+  display: flex;
+}
+header li {
+  list-style: none;
+  transition: all 300ms 0 ease;
+}
+
+.body .l-article .title {
+  font-size: 2.5em;
+  font-family: "System UI", sans-serif;
+  text-align: center;
+}
+.body .l-article .container {
+  box-sizing: border-box;
+  display: flex; /* フレックスコンテナを作成 */
+  flex-wrap: wrap; /* アイテムを折り返す */
+  padding-left: 20em;
+  padding-right: 20em;
+}
+.body .l-article .container .article {
+  flex: 40%; /* 各記事の幅を50%に設定し、間隔を考慮 */
+  width: 5em;
+  background-color: #f4f4f4;
+  position: relative;
+  box-sizing: content-box;
+  justify-content: space-around; /* アイテム間にスペースを配置 */
+  border-radius: 5px; /* 角を丸く */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* シャドウを追加 */
+  transition: transform 0.3s; /* ホバー時のアニメーション */
+}/*# sourceMappingURL=style.css.map */
