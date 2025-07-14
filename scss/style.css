@@ -28,7 +28,7 @@ header nav i {
 }
 header img {
   margin-left: 20em;
-  margin-right: 40em;
+  margin-right: 60em;
 }
 header ul {
   display: flex;
@@ -44,20 +44,85 @@ header li {
   text-align: center;
 }
 .body .l-article .container {
+  position: relative;
   box-sizing: border-box;
   display: flex; /* フレックスコンテナを作成 */
+  gap: 40px;
   flex-wrap: wrap; /* アイテムを折り返す */
-  padding-left: 20em;
-  padding-right: 20em;
+  height: 2000px;
+  /*中央寄りになるように左右を寄せてある*/
+  padding-left: 30em;
+  padding-right: 30em;
 }
 .body .l-article .container .article {
   flex: 40%; /* 各記事の幅を50%に設定し、間隔を考慮 */
-  width: 5em;
-  background-color: #f4f4f4;
+  /*background-color: #f4f4f4;*/
+  background-image: url(https://placehold.jp/400x300.png);
   position: relative;
   box-sizing: content-box;
   justify-content: space-around; /* アイテム間にスペースを配置 */
   border-radius: 5px; /* 角を丸く */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* シャドウを追加 */
   transition: transform 0.3s; /* ホバー時のアニメーション */
+}
+.body .l-article .container .article img {
+  width: auto; /*横幅は自動調整*/
+  height: 100%; /* 高さに合わせる */
+}
+
+.u-category {
+  display: inline-block;
+  position: absolute;
+  color: #ffffff;
+  font-size: small;
+  background-size: 20px 30px;
+}
+.u-category .PR {
+  background-color: #646464; /* 赤色の背景 */
+  color: #ffffff; /* 白色の文字 */
+  padding: 0.5em; /* パディングを追加 */
+  border-radius: 5px; /* 角を丸く */
+  font-weight: bold; /* 太字にする */
+}
+.u-category .ACTIVITY {
+  background-color: #ffb20a; /* 赤色の背景 */
+  color: #ffffff; /* 白色の文字 */
+  padding: 0.5em; /* パディングを追加 */
+  border-radius: 5px; /* 角を丸く */
+  font-weight: bold; /* 太字にする */
+}
+.u-category .ITEM {
+  background-color: #0dc15b; /* 赤色の背景 */
+  color: #ffffff; /* 白色の文字 */
+  padding: 0.5em; /* パディングを追加 */
+  border-radius: 5px; /* 角を丸く */
+  font-weight: bold; /* 太字にする */
+}
+.u-category .WELL-BEING {
+  background-color: #4d7ed8; /* 赤色の背景 */
+  color: #ffffff; /* 白色の文字 */
+  padding: 0.5em; /* パディングを追加 */
+  border-radius: 5px; /* 角を丸く */
+  font-weight: bold; /* 太字にする */
+}
+.u-category .ISSUE {
+  background-color: #009a0a; /* 赤色の背景 */
+  color: #ffffff; /* 白色の文字 */
+  padding: 0.5em; /* パディングを追加 */
+  border-radius: 5px; /* 角を丸く */
+  font-weight: bold; /* 太字にする */
+}
+.u-category .CULTURE {
+  background-color: #654732; /* 赤色の背景 */
+  color: #ffffff; /* 白色の文字 */
+  padding: 0.5em; /* パディングを追加 */
+  border-radius: 5px; /* 角を丸く */
+  font-weight: bold; /* 太字にする */
+}
+.u-category .LOVE {
+  background-color: #a94949; /* 赤色の背景 */
+  color: #ffffff; /* 白色の文字 */
+  padding: 0.5em; /* パディングを追加 */
+  border-radius: 5px; /* 角を丸く */
+  font-weight: bold; /* 太字にする */
 }/*# sourceMappingURL=style.css.map */
