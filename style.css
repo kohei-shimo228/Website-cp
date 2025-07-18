@@ -33,14 +33,17 @@ nav i {
 
 .navbar {
   display: flex;
+  
   justify-content: center;
   align-items: center;
 }
 
 ul.navbar{
   display: flex;
+  gap:40px;
 }
 li {
+  gap:40px;
   list-style: none;
   transition:all 300ms 0 ease;
 }

@@ -5,6 +5,7 @@ header {
   align-items: center;
 }
 header nav {
+  z-index: 1000;
   display: inline;
   width: 100%;
   height: 70px;
@@ -49,28 +50,37 @@ header li {
   display: flex; /* フレックスコンテナを作成 */
   gap: 40px;
   flex-wrap: wrap; /* アイテムを折り返す */
-  height: 2000px;
+  height: auto;
   /*中央寄りになるように左右を寄せてある*/
   padding-left: 30em;
   padding-right: 30em;
 }
 .body .l-article .container .article {
   flex: 40%; /* 各記事の幅を50%に設定し、間隔を考慮 */
-  /*background-color: #f4f4f4;*/
-  background-image: url(https://placehold.jp/400x300.png);
+  height: auto;
   position: relative;
-  box-sizing: content-box;
+  box-sizing: content;
   justify-content: space-around; /* アイテム間にスペースを配置 */
   border-radius: 5px; /* 角を丸く */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* シャドウを追加 */
+  /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* シャドウを追加 */
   transition: transform 0.3s; /* ホバー時のアニメーション */
 }
 .body .l-article .container .article img {
-  width: auto; /*横幅は自動調整*/
-  height: 100%; /* 高さに合わせる */
+  display: inline;
+  height: auto; /* 高さに合わせる */
+  width: auto;
+  max-width: 100%;
+}
+.body .l-article .container .article h3 {
+  font-size: x-large;
+}
+.body .l-article .container .article p {
+  line-clamp: 3;
+  text-overflow: ellipsis;
 }
 
 .u-category {
+  z-index: 10;
   display: inline-block;
   position: absolute;
   color: #ffffff;

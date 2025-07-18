@@ -16,7 +16,7 @@
         display:flex; /* フレックスコンテナを作成 */
         gap:40px;
         flex-wrap: wrap; /* アイテムを折り返す */
-        height:2000px;
+        height:auto;
         
 
         /*中央寄りになるように左右を寄せてある*/
@@ -25,25 +25,33 @@
 
         .article {
             flex:40%; /* 各記事の幅を50%に設定し、間隔を考慮 */
+            height:auto;
             
-            /*background-color: #f4f4f4;*/
-            background-image:url(https://placehold.jp/400x300.png);
+            
             position: relative;
-            box-sizing: content-box;
+            box-sizing: content;
             justify-content: space-around; /* アイテム間にスペースを配置 */
-            
-            
+
+
             border-radius: 5px; /* 角を丸く */
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* シャドウを追加 */
+            /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* シャドウを追加 */
             transition: transform 0.3s; /* ホバー時のアニメーション */
 
-
-
             img{
-                width:auto;  /*横幅は自動調整*/
-                height:100%; /* 高さに合わせる */
-                
+                display: inline;
+                height:auto; /* 高さに合わせる */
+                width: auto;
+                max-width: 100%;;
             }
+            h3{
+                font-size:x-large;
+            }
+            p{
+                line-clamp: 3;
+                text-overflow: ellipsis;
+            }
+
+
         }
     }
     }    
