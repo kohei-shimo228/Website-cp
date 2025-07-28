@@ -1,7 +1,9 @@
 @use "./Layout/header";
 @use "./Layout/footer";
+@use "./Layout/main";
 @use "./Layout/body";
 
 @use "./Foundation/variables";
 
-@use "./Utility/category.scss";
+@use "./Object/Project/category";
+@use "./Object/Project/hero";

@@ -11,41 +11,39 @@
 <link href="https://use.fontawesome.com/releases/v6.6.0/css/all.css" rel="stylesheet">
 
 </head> 
-<body class="body">
-    <!--
-    <div class="1st-view">
-        <div class="top-article">
-            <img src="https://placehold.jp/1900x1080.png" style="display:inline; max-width:100%; height:auto;">
-            <h3 style="position:relative;bottom: 3em;font-size:3em;color: white;">*それっぽいやつ</h3>
+
+<main class="l-main">
+    <div class="p-hero">
+        <div class="p-hero__main" class="c-article-card__img">
+            <img src="https://placehold.jp/3d4070/ffffff/1920x1080.png">
+            <h2 class="c-article-card__title">説明文1</h2>
         </div>
-        <div class="sub-articles" style="position:relative;bottom:78em;left: 68em;margin-bottom: 0.1em;display: flex;flex-direction: column;align-items: flex-start;object-fit: cover;">
-            <div class="sub-article" style="height: 540px;">
-                <img src="https://placehold.jp/3d4070/ffffff/800x540.png" style="display:inline; max-width:100%; height:auto;">
-                <h4 style="position: relative;bottom:3em;color:white">それっぽい記事タイトル1</h4>
-            </div>
-            <div class="sub-article" style="height: 540px;">
-                <img src="https://placehold.jp/3d4070/ffffff/800x540.png" style="display:inline; max-width:100%; height:auto;">
-                <h4 style="position: relative;bottom:3em;color: white;">それっぽい記事タイトル2</h4>
-            </div>
+        <div class="p-hero__sub">
+            <img src="https://placehold.jp/3da02f/ffffff/900x640.png" class="c-article-card__img">
+            <h2 class="c-article-card__title">説明文2</h2>
+        </div>
+        <div class="p-hero__sub">
+            <img src="https://placehold.jp/32e1a4/ffffff/900x640.png" class="c-article-card__img">
+            <h2 class="c-article-card__title">説明文3</h2>
+
         </div>
     </div>
--->
-    <br><br><br>
-
-    <div>
+</main>
+<body class="body">
+    
         <div class="l-article">
         <h3 class="title">NEW ARRIVALS</h3>
             <div class="container">
 
                 <div class="article">
-                    <div class="u-category"><div class="PR">PR</div></div>
+                    <div class="c-category"><div class="PR">PR</div></div>
                     <img src="https://placehold.jp/3d4070/ffffff/900x640.png">
                         <h3>今から学ぶならコレ！2025年、未来を変える最強プログラミング言語トップ3</h2>
                         <p>あなたのスキル、時代に置いていかれていませんか？今、IT業界で注目されている「Rust」「Python」「TypeScript」は、スピード・汎用性・市場価値の3拍子が揃った最強言語。未経験者でも始められる実践的な入門法と、キャリアにつながる応用事例を徹底解説！</p>
                 </div>
 
                 <div class="article">
-                    <div class="u-category"><div class="ACTIVITY">ACTIVITY</div></div>
+                    <div class="c-category"><div class="ACTIVITY">ACTIVITY</div></div>
                     <div>
                         <img src="https://placehold.jp/3da02f/ffffff/900x640.png">
                         <h3>夏休みは“暇”じゃない！大学生が今やるべき5つのこと</h3>
@@ -54,7 +52,7 @@
                 </div>
 
                 <div class="article">
-                    <div class="u-category"><div class="ISSUE">ISSUE</div></div>
+                    <div class="c-category"><div class="ISSUE">ISSUE</div></div>
                     <div>
                         <img src="https://placehold.jp/32e1a4/ffffff/900x640.png">
                         <h3>集中力が爆上がりする科学的習慣5選</h3>
@@ -63,7 +61,7 @@
                 </div>
 
                 <div class="article">
-                    <div class="u-category"><div class="WELL-BEING">WELL-BEING</div></div>
+                    <div class="c-category"><div class="WELL-BEING">WELL-BEING</div></div>
                     <div>
                         <img src="https://placehold.jp/404d10/ffffff/900x640.png">
                         <h3>“寝ても疲れが取れない”あなたへ。最高の睡眠を手に入れる6つのルール</h3>
@@ -72,7 +70,7 @@
                 </div>
 
                 <div class="article">
-                    <div class="u-category"><div class="CULTURE">CULTURE</div></div>
+                    <div class="c-category"><div class="CULTURE">CULTURE</div></div>
                     <div>
                         <img src="https://placehold.jp/8f101e/ffffff/900x640.png">
                         <h3>なぜ“ミーム”は世界を席巻するのか？インターネット文化の進化論</h3>
@@ -81,7 +79,7 @@
                 </div>
 
                 <div class="article">
-                    <div class="u-category"><div class="LOVE">LOVE</div></div>
+                    <div class="c-category"><div class="LOVE">LOVE</div></div>
                     <div>
                         <img src="https://placehold.jp/36643f/ffffff/900x640.png">
                         <h3>恋愛は戦略だ。モテる人に共通する“非モテが見落とす”3つの視点</h3>
@@ -94,7 +92,7 @@
         </div>
     </div>
 
-    <header>
+<header>
     <nav>
     <ul>
         <li><img src="./img/tl_logo.svg"></li>

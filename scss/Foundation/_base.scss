@@ -1,0 +1,13 @@
+:root{
+    margin:0;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #000;
+    background-color: #f4f4f4;
+    font-size: 16px;
+    line-height: 1.6;
+    overflow-x: hidden; /* 横スクロールを防ぐ */
+    scroll-behavior: smooth; /* スムーズスクロール */
+    height: 100vh; /* ビューポートの高さに合わせる */
+}

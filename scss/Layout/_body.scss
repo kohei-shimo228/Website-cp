@@ -1,6 +1,7 @@
 @use "../Foundation/variables" as *; // 変数をインポート
 
 .body{
+    margin: 0%;
     .l-article{
         .title{
             font-size: 2.5em;
