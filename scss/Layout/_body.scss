@@ -3,38 +3,37 @@
 .body{
     margin: 0%;
     .l-article{
-        .title{
-            font-size: 2.5em;
+        &__title{
+            font-size: 2em;
             font-family: $font-family;
             text-align: center;
         }
-        
-
-
-        .container {
+        &__container {
         position: relative;
         box-sizing: border-box;
         display:flex; /* フレックスコンテナを作成 */
-        gap:40px;
+        gap:2vw;
         flex-wrap: wrap; /* アイテムを折り返す */
+        flex-direction: row;
         height:auto;
         
 
         /*中央寄りになるように左右を寄せてある*/
-        padding-left: 30em; 
-        padding-right:30em;
+        padding-left:30vw; 
+        padding-right:30vw;
 
         .article {
-            flex:40%; /* 各記事の幅を50%に設定し、間隔を考慮 */
-            height:auto;
-            
-            
+            display: inline-block;
+            width: 30vw;
+            height:40%;
+            flex:1 1 45%; /* 各記事の幅を50%に設定し、間隔を考慮 */
             position: relative;
             box-sizing: content;
-            justify-content: space-around; /* アイテム間にスペースを配置 */
+            justify-content:center; /* アイテム間にスペースを配置 */
+            align-items: center;
+            
 
-
-            border-radius: 5px; /* 角を丸く */
+            /*border-radius: 5px; /* 角を丸く */
             /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* シャドウを追加 */
             transition: transform 0.3s; /* ホバー時のアニメーション */
 
@@ -54,8 +53,51 @@
 
 
         }
+        .article:nth-child(7n){
+            flex:1 1 100%;
+            width: 60vw;
+            height:40%;
+
+        }
+
+
+
+
+
+        }
     }
-    }    
+    
+    .p-CATEGORY{
+        text-align: center;
+        background-color:#222222;
+        height:100vw;
+        &__title{
+            font-size: x-large;
+            font-family: $font-family;
+            color:white;
+            padding: 1rem;
+        }
+        &__contentscontainer{
+            flex-wrap: wrap; /* アイテムを折り返す */
+            justify-content: center; /* アイテムを中央に配置 */
+            gap: 2vw; /* アイテム間のスペース */
+            padding: 1rem;
+            .headline{
+                color: white;
+                font-size:10em;
+                z-index: 1;
+                font-family: $font-family;
 
+                position: absolute;
+                left:50%;
+                margin-left:-50em;
+                text-align: center;
 
+            }
+            
+        }
+    }
 }
+
+
+

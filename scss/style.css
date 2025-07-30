@@ -47,47 +47,105 @@ header li {
 .body {
   margin: 0%;
 }
-.body .l-article .title {
-  font-size: 2.5em;
+.body .l-article__title {
+  font-size: 2em;
   font-family: "System UI", sans-serif;
   text-align: center;
 }
-.body .l-article .container {
+.body .l-article__container {
   position: relative;
   box-sizing: border-box;
   display: flex; /* フレックスコンテナを作成 */
-  gap: 40px;
+  gap: 2vw;
   flex-wrap: wrap; /* アイテムを折り返す */
+  flex-direction: row;
   height: auto;
   /*中央寄りになるように左右を寄せてある*/
-  padding-left: 30em;
-  padding-right: 30em;
+  padding-left: 30vw;
+  padding-right: 30vw;
 }
-.body .l-article .container .article {
-  flex: 40%; /* 各記事の幅を50%に設定し、間隔を考慮 */
-  height: auto;
+.body .l-article__container .article {
+  display: inline-block;
+  width: 30vw;
+  height: 40%;
+  flex: 1 1 45%; /* 各記事の幅を50%に設定し、間隔を考慮 */
   position: relative;
   box-sizing: content;
-  justify-content: space-around; /* アイテム間にスペースを配置 */
-  border-radius: 5px; /* 角を丸く */
+  justify-content: center; /* アイテム間にスペースを配置 */
+  align-items: center;
+  /*border-radius: 5px; /* 角を丸く */
   /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* シャドウを追加 */
   transition: transform 0.3s; /* ホバー時のアニメーション */
 }
-.body .l-article .container .article img {
+.body .l-article__container .article img {
   display: inline;
   height: auto; /* 高さに合わせる */
   width: auto;
   max-width: 100%;
 }
-.body .l-article .container .article h3 {
+.body .l-article__container .article h3 {
   font-size: x-large;
 }
-.body .l-article .container .article p {
+.body .l-article__container .article p {
   line-clamp: 3;
   text-overflow: ellipsis;
 }
+.body .l-article__container .article:nth-child(7n) {
+  flex: 1 1 100%;
+  width: 60vw;
+  height: 40%;
+}
+.body .p-CATEGORY {
+  text-align: center;
+  background-color: #222222;
+  height: 100vw;
+}
+.body .p-CATEGORY__title {
+  font-size: x-large;
+  font-family: "System UI", sans-serif;
+  color: white;
+  padding: 1rem;
+}
+.body .p-CATEGORY__contentscontainer {
+  flex-wrap: wrap; /* アイテムを折り返す */
+  justify-content: center; /* アイテムを中央に配置 */
+  gap: 2vw; /* アイテム間のスペース */
+  padding: 1rem;
+}
+.body .p-CATEGORY__contentscontainer .headline {
+  color: white;
+  font-size: 10em;
+  z-index: 1;
+  font-family: "System UI", sans-serif;
+  position: absolute;
+  left: 50%;
+  margin-left: -50em;
+  text-align: center;
+}
 
-.c-category {
+.c-button {
+  text-align: center;
+  font-family: "System UI", sans-serif;
+}
+.c-button__ShowMore {
+  display: block;
+  margin: 5vh auto;
+  line-height: 25%;
+  background-color: red;
+  border-radius: 2em;
+  color: white;
+  font-size: 1em;
+  border: none;
+  cursor: pointer;
+  width: 10vw;
+  padding: 1em;
+  transition: all 0.3s ease;
+}
+.c-button__play {
+  display: inline-block;
+}
+
+.p-articletype {
   z-index: 10;
   display: inline-block;
   position: absolute;
@@ -95,49 +153,49 @@ header li {
   font-size: small;
   background-size: 20px 30px;
 }
-.c-category .PR {
+.p-articletype .PR {
   background-color: #646464; /* 赤色の背景 */
   color: #ffffff; /* 白色の文字 */
   padding: 0.5em; /* パディングを追加 */
   border-radius: 5px; /* 角を丸く */
   font-weight: bold; /* 太字にする */
 }
-.c-category .ACTIVITY {
+.p-articletype .ACTIVITY {
   background-color: #ffb20a; /* 赤色の背景 */
   color: #ffffff; /* 白色の文字 */
   padding: 0.5em; /* パディングを追加 */
   border-radius: 5px; /* 角を丸く */
   font-weight: bold; /* 太字にする */
 }
-.c-category .ITEM {
+.p-articletype .ITEM {
   background-color: #0dc15b; /* 赤色の背景 */
   color: #ffffff; /* 白色の文字 */
   padding: 0.5em; /* パディングを追加 */
   border-radius: 5px; /* 角を丸く */
   font-weight: bold; /* 太字にする */
 }
-.c-category .WELL-BEING {
+.p-articletype .WELL-BEING {
   background-color: #4d7ed8; /* 赤色の背景 */
   color: #ffffff; /* 白色の文字 */
   padding: 0.5em; /* パディングを追加 */
   border-radius: 5px; /* 角を丸く */
   font-weight: bold; /* 太字にする */
 }
-.c-category .ISSUE {
+.p-articletype .ISSUE {
   background-color: #009a0a; /* 赤色の背景 */
   color: #ffffff; /* 白色の文字 */
   padding: 0.5em; /* パディングを追加 */
   border-radius: 5px; /* 角を丸く */
   font-weight: bold; /* 太字にする */
 }
-.c-category .CULTURE {
+.p-articletype .CULTURE {
   background-color: #654732; /* 赤色の背景 */
   color: #ffffff; /* 白色の文字 */
   padding: 0.5em; /* パディングを追加 */
   border-radius: 5px; /* 角を丸く */
   font-weight: bold; /* 太字にする */
 }
-.c-category .LOVE {
+.p-articletype .LOVE {
   background-color: #a94949; /* 赤色の背景 */
   color: #ffffff; /* 白色の文字 */
   padding: 0.5em; /* パディングを追加 */
