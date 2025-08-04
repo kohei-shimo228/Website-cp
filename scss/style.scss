@@ -4,8 +4,11 @@
 @use "./Layout/footer";
 @use "./Layout/main";
 @use "./Layout/body";
+@use "./Layout/feature";
+@use "./Layout/worldtopics";
 
 @use "./Object/Component/button";
 
 @use "./Object/Project/articletype";
 @use "./Object/Project/hero";
+@use "./Object/Project/category";

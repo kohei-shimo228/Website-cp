@@ -3,7 +3,7 @@
 .c-button{
     text-align: center;
     font-family: $font-family;
-
+    padding-bottom:3em;
     &__ShowMore{
         display:block;
         margin: 5vh auto;
@@ -17,7 +17,12 @@
         cursor: pointer;
         width:10vw;
         padding:1em;
+        
         transition: all 0.3s ease;
+    }
+    &__ShowMore:hover{
+        background-color: darkred;
+        transform: scale(1.2);
     }
     
     &__play{

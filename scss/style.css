@@ -27,6 +27,9 @@ header nav i {
   font-size: 120%;
   transition: all ease 0.5s 0s;
 }
+header nav i:hover {
+  transform: scale(1.5);
+}
 header img {
   margin-left: 10vw;
   margin-right: 50vw;
@@ -73,8 +76,6 @@ header li {
   box-sizing: content;
   justify-content: center; /* アイテム間にスペースを配置 */
   align-items: center;
-  /*border-radius: 5px; /* 角を丸く */
-  /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* シャドウを追加 */
   transition: transform 0.3s; /* ホバー時のアニメーション */
 }
 .body .l-article__container .article img {
@@ -95,37 +96,115 @@ header li {
   width: 60vw;
   height: 40%;
 }
-.body .p-CATEGORY {
+
+.l-feature {
+  padding-top: 1em;
+  padding-bottom: 1em;
   text-align: center;
-  background-color: #222222;
-  height: 100vw;
+  background-color: #0c0c0c;
 }
-.body .p-CATEGORY__title {
-  font-size: x-large;
-  font-family: "System UI", sans-serif;
-  color: white;
-  padding: 1rem;
-}
-.body .p-CATEGORY__contentscontainer {
-  flex-wrap: wrap; /* アイテムを折り返す */
-  justify-content: center; /* アイテムを中央に配置 */
-  gap: 2vw; /* アイテム間のスペース */
-  padding: 1rem;
-}
-.body .p-CATEGORY__contentscontainer .headline {
-  color: white;
-  font-size: 10em;
-  z-index: 1;
-  font-family: "System UI", sans-serif;
-  position: absolute;
-  left: 50%;
-  margin-left: -50em;
+.l-feature__title {
   text-align: center;
+  margin: 0 auto;
+  font-family: "System UI", sans-serif;
+  font-size: 1em;
+  color: white;
+  margin-bottom: 10vh;
+}
+.l-feature__card-container {
+  display: grid; /* Gridレイアウトを使用 */
+  grid-template-columns: repeat(4, 1fr); /* 4列の設定 */
+  grid-template-rows: repeat(2, 1fr); /* 2行の設定 */
+  gap: 10px; /* グリッドアイテム間の隙間を設定 */
+  height: 60vh; /* コンテナの高さを設定（任意） */
+  width: auto;
+  min-height: 500px;
+  min-width: 500px;
+  padding-left: 15%;
+  padding-right: 15%;
+  justify-content: center;
+  align-content: center;
+  padding-bottom: 3em;
+}
+.l-feature__card-container .c-card {
+  height: auto;
+  width: auto;
+  color: white;
+  background-color: aqua;
+  text-align: center;
+}
+.l-feature__card-container .c-card img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.l-worldtopics {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background-color: white;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.l-worldtopics__headerimage {
+  margin: 2% 0;
+  display: inline-block;
+  width: 10%;
+  height: auto;
+}
+.l-worldtopics__container {
+  text-align: left;
+  margin: 0 auto;
+  display: block;
+  height: auto;
+}
+.l-worldtopics__container__topiccontainer {
+  margin: 1% 30%;
+  display: inline-block;
+  width: 40%;
+  height: 10em;
+}
+.l-worldtopics__container__topiccontainer__text {
+  display: block;
+  width: 60%;
+  height: 100%;
+  position: relative;
+  overflow-wrap: anywhere;
+}
+.l-worldtopics__container__topiccontainer__text__header {
+  display: block;
+  width: 100%;
+  height: 80%;
+  font-family: "System UI", sans-serif;
+  font-size: xx-large;
+  color: #000;
+}
+.l-worldtopics__container__topiccontainer__text__date {
+  display: block;
+  width: 100%;
+  height: 20%;
+  font-family: "System UI", sans-serif;
+  font-size: x-small;
+  color: #000;
+}
+.l-worldtopics__container__topiccontainer__image {
+  display: block;
+  width: 30%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  float: right;
+  position: relative;
+  bottom: 100%;
+  margin: 0 5%;
 }
 
 .c-button {
   text-align: center;
   font-family: "System UI", sans-serif;
+  padding-bottom: 3em;
 }
 .c-button__ShowMore {
   display: block;
@@ -140,6 +219,10 @@ header li {
   width: 10vw;
   padding: 1em;
   transition: all 0.3s ease;
+}
+.c-button__ShowMore:hover {
+  background-color: darkred;
+  transform: scale(1.2);
 }
 .c-button__play {
   display: inline-block;
@@ -263,4 +346,68 @@ header li {
   padding: 0.2rem;
   color: white;
   font-size: 1.5rem;
+}
+
+.p-CATEGORY {
+  text-align: center;
+  background-color: #222222;
+  padding-bottom: 1em;
+}
+.p-CATEGORY__title {
+  font-size: x-large;
+  font-family: "System UI", sans-serif;
+  color: white;
+  padding: 1rem;
+}
+.p-CATEGORY__contentscontainer {
+  display: block;
+  justify-content: center; /* アイテムを中央に配置 */
+  /*中央寄りになるように左右を寄せてある*/
+  padding-left: 35vw;
+  padding-right: 35vw;
+}
+.p-CATEGORY__contentscontainer .c-CATEGORY-container .subtitle {
+  position: relative;
+  display: block;
+  color: white;
+  font-size: 5em;
+  z-index: 10;
+  font-family: "System UI", sans-serif;
+  top: 0.5em;
+}
+.p-CATEGORY__contentscontainer .c-CATEGORY-container .c-CATEGORY-cardcontainer {
+  position: relative;
+  box-sizing: border-box;
+  display: flex; /* フレックスコンテナを作成 */
+  gap: 2vw;
+  flex-wrap: wrap; /* アイテムを折り返す */
+  flex-direction: row;
+  height: auto;
+}
+.p-CATEGORY__contentscontainer .c-CATEGORY-container .c-CATEGORY-cardcontainer .c-CATEGORY-card {
+  display: inline-block;
+  width: 30vw;
+  height: 40%;
+  flex: 1 1 45%; /* 各記事の幅を50%に設定し、間隔を考慮 */
+  position: relative;
+  box-sizing: content;
+  justify-content: center; /* アイテム間にスペースを配置 */
+  align-items: center;
+  transition: transform 0.3s; /* ホバー時のアニメーション */
+}
+.p-CATEGORY__contentscontainer .c-CATEGORY-container .c-CATEGORY-cardcontainer .c-CATEGORY-card__image {
+  display: inline;
+  height: auto; /* 高さに合わせる */
+  width: 100%;
+  max-width: 100%;
+}
+.p-CATEGORY__contentscontainer .c-CATEGORY-container .c-CATEGORY-cardcontainer .c-CATEGORY-card__article {
+  font-family: "System UI", sans-serif;
+  color: white;
+  text-align: left;
+  line-clamp: 2;
+  text-overflow: ellipsis;
+}
+.p-CATEGORY__contentscontainer .c-CATEGORY-container .c-CATEGORY-cardcontainer .c-CATEGORY-card:nth-child(1) {
+  flex: 0 1 200%;
 }/*# sourceMappingURL=style.css.map */

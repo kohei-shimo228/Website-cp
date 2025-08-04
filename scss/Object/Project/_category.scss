@@ -1,76 +1,79 @@
-$font-color:#ffffff;
+@use "../../Foundation/variables" as *; // 変数をインポート
+.p-CATEGORY{
+        text-align: center;
+        background-color:#222222;
+        padding-bottom: 1em;
+        &__title{
+            font-size: x-large;
+            font-family: $font-family;
+            color:white;
+            padding: 1rem;
+        }
+        &__contentscontainer{
+            display:block;
+            justify-content: center; /* アイテムを中央に配置 */
+            /*中央寄りになるように左右を寄せてある*/
+            padding-left:35vw; 
+            padding-right:35vw;
 
-.c-category {
-    z-index: 10;
-    display: inline-block;
-    position: absolute;
-    color: $font-color;
-    font-size:small;
-    background-size: 20px 30px;
+
+
+            .c-CATEGORY-container{
+                .subtitle{
+                    position:relative;
+                    display: block;
+                    color: white;
+                    font-size:5em;
+                    z-index: 10;
+                    font-family: $font-family;
+                    top:0.5em;
     
-
-    .PR{
-        background-color: #646464; /* 赤色の背景 */
-        color: $font-color; /* 白色の文字 */
-        padding: 0.5em; /* パディングを追加 */
-        border-radius: 5px; /* 角を丸く */
-        font-weight: bold; /* 太字にする */
-    }
-
     
-    .ACTIVITY{
-        background-color: #ffb20a; /* 赤色の背景 */
-        color: $font-color; /* 白色の文字 */
-        padding: 0.5em; /* パディングを追加 */
-        border-radius: 5px; /* 角を丸く */
-        font-weight: bold; /* 太字にする */
+                }
+                .c-CATEGORY-cardcontainer{
+                    
+                    position: relative;
+                    box-sizing: border-box;
+                    display:flex; /* フレックスコンテナを作成 */
+                    gap:2vw;
+                    flex-wrap: wrap; /* アイテムを折り返す */
+                    flex-direction: row;
+                    height:auto;
+
+
+                    .c-CATEGORY-card{
+                        display: inline-block;
+                        width: 30vw;
+                        height:40%;
+                        flex:1 1 45%; /* 各記事の幅を50%に設定し、間隔を考慮 */
+                        position: relative;
+                        box-sizing: content;
+                        justify-content:center; /* アイテム間にスペースを配置 */
+                        align-items: center;
+                        transition: transform 0.3s; /* ホバー時のアニメーション */
+
+                        &__image{
+                            display:inline;
+                            height:auto; /* 高さに合わせる */
+                            width: 100%;
+                            max-width: 100%;
+                        }
+
+                        &__article{
+                            font-family: $font-family;
+                            color: white;
+                            text-align: left;
+                            line-clamp: 2;
+                            text-overflow: ellipsis;
+                        }
+                    }
+                    .c-CATEGORY-card:nth-child(1){
+                        flex: 0 1 200%;
+                    }
+
+                }
+            }
+
+            
+        }
     }
-
-    
-    .ITEM{
-        background-color: #0dc15b; /* 赤色の背景 */
-        color: $font-color; /* 白色の文字 */
-        padding: 0.5em; /* パディングを追加 */
-        border-radius: 5px; /* 角を丸く */
-        font-weight: bold; /* 太字にする */
-    }
-
-    
-    .WELL-BEING{
-        background-color: #4d7ed8; /* 赤色の背景 */
-        color: $font-color; /* 白色の文字 */
-        padding: 0.5em; /* パディングを追加 */
-        border-radius: 5px; /* 角を丸く */
-        font-weight: bold; /* 太字にする */
-    }
-
-    
-    .ISSUE{
-        background-color: #009a0a; /* 赤色の背景 */
-        color: $font-color; /* 白色の文字 */
-        padding: 0.5em; /* パディングを追加 */
-        border-radius: 5px; /* 角を丸く */
-        font-weight: bold; /* 太字にする */
-    }
-
-    
-    .CULTURE{
-        background-color: #654732; /* 赤色の背景 */
-        color: $font-color; /* 白色の文字 */
-        padding: 0.5em; /* パディングを追加 */
-        border-radius: 5px; /* 角を丸く */
-        font-weight: bold; /* 太字にする */
-    }
-
-    
-    .LOVE{
-        background-color: #a94949; /* 赤色の背景 */
-        color: $font-color; /* 白色の文字 */
-        padding: 0.5em; /* パディングを追加 */
-        border-radius: 5px; /* 角を丸く */
-        font-weight: bold; /* 太字にする */
-    }
-
-}
-
-

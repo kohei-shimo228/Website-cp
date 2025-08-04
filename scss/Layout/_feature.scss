@@ -1,0 +1,59 @@
+@use "../Foundation/variables" as *; // 変数をインポート
+
+
+
+.l-feature{
+    padding-top:1em;
+    padding-bottom:1em;
+    text-align: center;
+    background-color:#0c0c0c;
+
+    &__title{
+        text-align:center;
+        margin:0 auto;
+        font-family: $font-family;
+        font-size: 1em;
+        color:white;
+        margin-bottom:10vh;
+        
+    }
+    &__card-container{
+        display: grid; /* Gridレイアウトを使用 */
+        grid-template-columns: repeat(4, 1fr); /* 4列の設定 */
+        grid-template-rows: repeat(2, 1fr); /* 2行の設定 */
+        gap: 10px; /* グリッドアイテム間の隙間を設定 */
+        height: 60vh; /* コンテナの高さを設定（任意） */
+        width:auto;
+        min-height: 500px;
+        min-width:500px;
+        padding-left:15%;
+        padding-right:15%;
+        justify-content: center;
+        align-content: center;
+        padding-bottom:3em;
+        .c-card{
+            height:auto;
+            width:auto;
+            color:white;
+            background-color: aqua;
+            text-align:center;
+            
+
+            img{
+                width:100%;
+                height:100%;
+                object-fit: cover;
+            }
+
+        }
+
+    }
+}
+
+
+
+
+
+
+
+

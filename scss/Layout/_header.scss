@@ -26,9 +26,11 @@ header{
             margin-left:1vw;
             font-size:120%;
 
-            transition: all ease 0.5s 0s;
+            transition: all ease  0.5s 0s;
         }
-
+        i:hover{
+            transform:scale(1.5);
+        }
     }
 
     img{

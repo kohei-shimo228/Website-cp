@@ -31,10 +31,6 @@
             box-sizing: content;
             justify-content:center; /* アイテム間にスペースを配置 */
             align-items: center;
-            
-
-            /*border-radius: 5px; /* 角を丸く */
-            /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* シャドウを追加 */
             transition: transform 0.3s; /* ホバー時のアニメーション */
 
             img{
@@ -67,36 +63,7 @@
         }
     }
     
-    .p-CATEGORY{
-        text-align: center;
-        background-color:#222222;
-        height:100vw;
-        &__title{
-            font-size: x-large;
-            font-family: $font-family;
-            color:white;
-            padding: 1rem;
-        }
-        &__contentscontainer{
-            flex-wrap: wrap; /* アイテムを折り返す */
-            justify-content: center; /* アイテムを中央に配置 */
-            gap: 2vw; /* アイテム間のスペース */
-            padding: 1rem;
-            .headline{
-                color: white;
-                font-size:10em;
-                z-index: 1;
-                font-family: $font-family;
 
-                position: absolute;
-                left:50%;
-                margin-left:-50em;
-                text-align: center;
-
-            }
-            
-        }
-    }
 }
 
 
