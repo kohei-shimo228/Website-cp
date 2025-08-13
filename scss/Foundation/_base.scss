@@ -1,13 +1,16 @@
+@use "./variables" as *; // 変数をインポート
 :root{
+    width:100%;
+    height:100%;
     margin:0;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'Noto Sans JP', sans-serif;
-    color: #000;
+    font-family: $font-family;
+    color: $font-color;
+    background-color: $background-color;
     background-color: #f4f4f4;
-    font-size: 16px;
+    font-size: $font-size;
     line-height: 1.6;
     overflow-x: hidden; /* 横スクロールを防ぐ */
     scroll-behavior: smooth; /* スムーズスクロール */
-    height: 100vh; /* ビューポートの高さに合わせる */
 }

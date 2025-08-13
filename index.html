@@ -6,16 +6,30 @@
 <title>TABI LABO(偽)scss使用</title> 
 <link href="./scss/style.css" rel="stylesheet" />
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="./js/main.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
 <link href="https://use.fontawesome.com/releases/v6.6.0/css/all.css" rel="stylesheet">
 
-</head> 
+</head>
+
+<header>
+    <nav>
+        <ul>
+            <li><img src="./img/tl_logo.svg"></li>
+            <li><a href="https://www.facebook.com/tabilabonews/"><i class="fab fa-thin fa-facebook-f nav-icon"></i></a></li>
+            <li><a href="https://twitter.com/intent/follow?screen_name=tabilabo_news"><i class="fab fa-thin fa-twitter nav-icon"></i></a></li>
+            <li><a href="https://www.instagram.com/tabilabo/"><i class="fab fa-thin fa-instagram nav-icon"></i></a></li>
+            <li><a href="https://www.youtube.com/channel/UCosiTouV3orvNLj_mLwpxiA"><i class="fab fa-thin fa-youtube nav-icon"></i></a></li>
+            <li><a href=""><i class="fas fa-thin fa-ellipsis nav-icon"></i></a></li>
+            <li><a><i class="fas fa-thin fa-magnifying-glass nav-icon"></i></a></li>
+        </ul>
+    </nav>
+</header>
 
 <main class="l-main">
     <div class="p-hero">
         <div class="p-hero__main" class="c-article-card__img">
-            <img src="https://placehold.jp/3d4070/ffffff/1920x1080.png">
+            <img src="https://placehold.jp/3d4070/ffffff/1920x1280.png">
             <h2 class="c-article-card__title">説明文1</h2>
         </div>
         <div class="p-hero__sub">
@@ -346,17 +360,18 @@
     <div class="l-feature">
         <div class="l-feature__title">特集</div>
         <div class="l-feature__card-container">
-            <div class="c-card"><img src="https://placehold.jp/c11c80/ffffff/200x200.png"></div>
-            <div class="c-card"><img src="https://placehold.jp/3de6f6/ffffff/200x200.png"></div>
-            <div class="c-card"><img src="https://placehold.jp/232d93/ffffff/200x200.png"></div>
-            <div class="c-card"><img src="https://placehold.jp/d23a0e/ffffff/200x200.png"></div>
-            <div class="c-card"><img src="https://placehold.jp/414dd7/ffffff/200x200.png"></div>
-            <div class="c-card"><img src="https://placehold.jp/7e19a5/ffffff/200x200.png"></div>
-            <div class="c-card"><img src="https://placehold.jp/0e57da/ffffff/200x200.png"></div>
-            <div class="c-card"><img src="https://placehold.jp/a86f88/ffffff/200x200.png"></div>
+            <div class="c-card"><img src="https://placehold.jp/c11c80/ffffff/400x400.png"></div>
+            <div class="c-card"><img src="https://placehold.jp/3de6f6/ffffff/400x400.png"></div>
+            <div class="c-card"><img src="https://placehold.jp/232d93/ffffff/400x400.png"></div>
+            <div class="c-card"><img src="https://placehold.jp/d23a0e/ffffff/400x400.png"></div>
+            <div class="c-card"><img src="https://placehold.jp/414dd7/ffffff/400x400.png"></div>
+            <div class="c-card"><img src="https://placehold.jp/7e19a5/ffffff/400x400.png"></div>
+            <div class="c-card"><img src="https://placehold.jp/0e57da/ffffff/400x400.png"></div>
+            <div class="c-card"><img src="https://placehold.jp/a86f88/ffffff/400x400.png"></div>
         </div>
         <button class="c-button__ShowMore" type="button">特集一覧</button>
     </div>
+
     <div class="l-worldtopics">
         <div class="l-worldtopics__headerimage"><img src="./img/worldtopics_title.svg"></div>
         <div class="l-worldtopics__container">
@@ -410,29 +425,169 @@
             </div>
 
         </div>
-        <button class="c-button__ShowMore" type="button">特集一覧</button>
-        
+        <button class="c-button__ShowMore" type="button">VIEW MORE</button>
+    </div>
+    <div class="l-video">
+        <div class="l-video__title">VIDEO</div>
+        <div  class="l-video__swiper">  <!--Slierのメインクラス-->
+            <div class="p-swiper">  <!--スライドのコンテナ-->
+                <div class="p-swiper__slide">
+                    <div class="c-videos">
+                        <img src="./img/play-button.svg" class="c-button__play">
+                        <video class="c-videos__media" poster="https://placehold.jp/1080x720.png"></video>
+                        <div class="c-videos__title">動画タイトル</div>
+                    </div>
+                </div>
+                <div class="p-swiper__slide">
+                    <div class="c-videos">
+                        <img src="./img/play-button.svg" class="c-button__play">
+                        <video class="c-videos__media" poster="https://placehold.jp/1080x720.png"></video>
+                        <div class="c-videos__title">動画タイトル</div>
+                    </div>
+                </div>                
+                <div class="p-swiper__slide">
+                    <div class="c-videos">
+                        <img src="./img/play-button.svg" class="c-button__play">
+                        <video class="c-videos__media" poster="https://placehold.jp/1080x720.png"></video>
+                        <div class="c-videos__title">動画タイトル</div>
+                    </div>
+                </div>
+                <div class="p-swiper__slide">
+                    <div class="c-videos">
+                        <img src="./img/play-button.svg" class="c-button__play">
+                        <video class="c-videos__media" poster="https://placehold.jp/1080x720.png"></video>
+                        <div class="c-videos__title">動画タイトル</div>
+                    </div>
+                </div> 
+                <div class="p-swiper__slide">
+                    <div class="c-videos">
+                        <img src="./img/play-button.svg" class="c-button__play">
+                        <video class="c-videos__media" poster="https://placehold.jp/1080x720.png"></video>
+                        <div class="c-videos__title">動画タイトル</div>
+                    </div>
+                </div>
+                <div class="p-swiper__slide">
+                    <div class="c-videos">
+                        <img src="./img/play-button.svg" class="c-button__play">
+                        <video class="c-videos__media" poster="https://placehold.jp/1080x720.png"></video>
+                        <div class="c-videos__title">動画タイトル</div>
+                    </div>
+                </div> 
+                <div class="p-swiper__slide">
+                    <div class="c-videos">
+                        <img src="./img/play-button.svg" class="c-button__play">
+                        <video class="c-videos__media" poster="https://placehold.jp/1080x720.png"></video>
+                        <div class="c-videos__title">動画タイトル</div>
+                    </div>
+                </div>
+                <div class="p-swiper__slide">
+                    <div class="c-videos">
+                        <img src="./img/play-button.svg" class="c-button__play">
+                        <video class="c-videos__media" poster="https://placehold.jp/1080x720.png"></video>
+                        <div class="c-videos__title">動画タイトル</div>
+                    </div>
+                </div>                
+                <div class="p-swiper__slide">
+                    <div class="c-videos">
+                        <img src="./img/play-button.svg" class="c-button__play">
+                        <video class="c-videos__media" poster="https://placehold.jp/1080x720.png"></video>
+                        <div class="c-videos__title">動画タイトル</div>
+                    </div>
+                </div>
+                <div class="p-swiper__slide">
+                    <div class="c-videos">
+                        <img src="./img/play-button.svg" class="c-button__play">
+                        <video class="c-videos__media" poster="https://placehold.jp/1080x720.png"></video>
+                        <div class="c-videos__title">動画タイトル</div>
+                    </div>
+                </div> 
+                <div class="p-swiper__slide">
+                    <div class="c-videos">
+                        <img src="./img/play-button.svg" class="c-button__play">
+                        <video class="c-videos__media" poster="https://placehold.jp/1080x720.png"></video>
+                        <div class="c-videos__title">動画タイトル</div>
+                    </div>
+                </div>
+                <div class="p-swiper__slide">
+                    <div class="c-videos">
+                        <img src="./img/play-button.svg" class="c-button__play">
+                        <video class="c-videos__media" poster="https://placehold.jp/1080x720.png"></video>
+                        <div class="c-videos__title">動画タイトル</div>
+                    </div>
+                </div>                
+
+            </div>
+
+            <div class="swiper-pagination"></div>  <!--ページネーション-->
+            <div class="swiper-button-next"></div>  <!--次へボタン-->
+            <div class="swiper-button-prev"></div>  <!--前へボタン-->
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+<footer class="l-footer">
+    <img src="./img/tl_logo.svg" class="l-footer__logo">
+    <div class="l-footer__container">
+        <div class="l-footer__container__title">OTHER</div>
+
+        <div class="c-footer-box">
+            <div class="c-footer-box__title">MEDIA</div>
+            <img src="https://placehold.jp/6a6ac0/ffffff/300x300.png" class="c-footer-box__image">
+        </div>
+
+        <div class="c-footer-box">
+            <div class="c-footer-box__title">MEDIA</div>
+            <img src="https://placehold.jp/6a6ac0/ffffff/300x300.png" class="c-footer-box__image">
+        </div>
+
+        <div class="c-footer-box">
+            <div class="c-footer-box__title">VIDEO</div>
+            <img src="https://placehold.jp/6a6ac0/ffffff/300x300.png" class="c-footer-box__image">
+        </div>
+
+        <div class="c-footer-box">
+            <div class="c-footer-box__title">VIDEO</div>
+            <img src="https://placehold.jp/6a6ac0/ffffff/300x300.png" class="c-footer-box__image">
+        </div>
+
+        <div class="c-footer-box">
+            <div class="c-footer-box__title">EVENT</div>
+            <img src="https://placehold.jp/6a6ac0/ffffff/300x300.png" class="c-footer-box__image">
+        </div>
+
+
+
+    </div>
+
+    <div class="l-footer__container">
+        <div class="l-footer__container__title">FOLLOW US</div>
+        <div class="l-footer__container__text">TABI LABOの最新記事をCHECK!</div>   
+        <div class="c-footer-box">
+            <a href="https://www.facebook.com/tabilabonews/"><i class="fab fa-thin fa-facebook-f c-footer-box__icon"></i></a>
+            <a href="https://twitter.com/intent/follow?screen_name=tabilabo_news"><i class="fab fa-thin fa-twitter c-footer-box__icon"></i></a>
+            <a href="https://www.instagram.com/tabilabo/"><i class="fab fa-thin fa-instagram c-footer-box__icon"></i></a>
+            <a href="https://www.youtube.com/channel/UCosiTouV3orvNLj_mLwpxiA"><i class="fab fa-thin fa-youtube c-footer-box__icon"></i></a>
+            <a href="http://bit.ly/2iUk72I"><i class="fab fa-thin fa-line c-footer-box__icon"></i></a>
+        </div>
         
     </div>
-    
 
-</body>
+    <div class="l-footer__container">
+        <div class="l-footer__container__title">JOIN US</div>
+        <div class="l-footer__container__text">1日1通、メールで新着情報をCHECK!<a href="#" class="l-footer__container__link">詳しくはコチラ ></a></div>
 
-    <header>
-        <nav>
-            <ul>
-                <li><img src="./img/tl_logo.svg"></li>
-                <li><a href="https://www.facebook.com/tabilabonews/"><i class="fab fa-thin fa-facebook-f nav-icon"></i></a></li>
-                <li><a href="https://twitter.com/intent/follow?screen_name=tabilabo_news"><i class="fab fa-thin fa-twitter nav-icon"></i></a></li>
-                <li><a href="https://www.instagram.com/tabilabo/"><i class="fab fa-thin fa-instagram nav-icon"></i></a></li>
-                <li><a href="https://www.youtube.com/channel/UCosiTouV3orvNLj_mLwpxiA"><i class="fab fa-thin fa-youtube nav-icon"></i></a></li>
-                <li><a href=""><i class="fas fa-thin fa-ellipsis nav-icon"></i></a></li>
-                <li><a><i class="fas fa-thin fa-magnifying-glass nav-icon"></i></a></li>
-            </ul>
-        </nav>
-    <header>
+        <input type="email" placeholder="Mail Address" class="c-submit"><input type="submit" value="GO" class="c-button__submit">
 
-</body>
+    </div>
+
+</footer>
+
+
+
 
 
 

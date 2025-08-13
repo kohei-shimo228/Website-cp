@@ -1,1 +1,68 @@
 @use "../Foundation/variables" as *; // 変数をインポート
+
+
+
+.l-footer{
+    display: block;
+    background-color: rgb(35, 35, 35);
+    color: white;
+    padding:1em 0;
+    margin: auto;
+    text-align: center;
+    width:100%;
+    height:auto;
+    
+    &__logo{
+        display:inline-block;
+        width: 10%;
+        height:auto;
+        margin:2% 0;
+
+    }
+    &__container{
+        display:block;
+        height:auto;
+        width: auto;
+        padding:0 0em;
+        margin:2em 0;  /* 中央寄せ */
+        text-align: center;
+
+
+        &__title{
+            font-family: $font-family;
+            color: white;
+            font-size: 1.5em;
+            display: block;
+            
+        }
+        &__text{
+            font-family: $font-family;
+            color: white;
+            font-size: 1em;
+            display: block;
+            margin: 1em 0;
+        }
+        &__link{
+            font-family: $font-family;
+            color: white;
+            font-size: 1em;
+            display: inline-block;
+            margin: 0.5em 1em;
+            text-decoration: underline;
+
+            &:hover{
+                color: rgb(128, 106, 255);
+                text-decoration: underline;
+            }
+        }
+
+    }
+
+}
+
+
+
+
+
+
+

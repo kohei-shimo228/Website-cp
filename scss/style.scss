@@ -6,9 +6,17 @@
 @use "./Layout/body";
 @use "./Layout/feature";
 @use "./Layout/worldtopics";
+@use "./Layout/video";
+
+
 
 @use "./Object/Component/button";
+@use "./Object/Component/footer-box";
+@use "./Object/Component/submit";
+@use "./Object/Component/videos";
+
 
 @use "./Object/Project/articletype";
 @use "./Object/Project/hero";
 @use "./Object/Project/category";
+@use "./Object/Project/swiper";
