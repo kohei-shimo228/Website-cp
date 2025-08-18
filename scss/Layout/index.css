@@ -1,0 +1,280 @@
+@charset "UTF-8";
+.l-article__title {
+  font-size: 2em;
+  font-family: "segoe ui", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  text-align: center;
+}
+.l-article__container {
+  position: relative;
+  box-sizing: border-box;
+  display: flex; /* フレックスコンテナを作成 */
+  gap: 2vw;
+  flex-wrap: wrap; /* アイテムを折り返す */
+  flex-direction: row;
+  height: auto;
+  /*中央寄りになるように左右を寄せてある*/
+  padding-left: 30vw;
+  padding-right: 30vw;
+}
+.l-article__container .article {
+  display: inline-block;
+  width: 30vw;
+  height: 40%;
+  flex: 1 1 45%; /* 各記事の幅を50%に設定し、間隔を考慮 */
+  position: relative;
+  box-sizing: content;
+  justify-content: center; /* アイテム間にスペースを配置 */
+  align-items: center;
+  transition: transform 0.3s; /* ホバー時のアニメーション */
+}
+.l-article__container .article img {
+  display: inline;
+  height: auto; /* 高さに合わせる */
+  width: auto;
+  max-width: 100%;
+}
+.l-article__container .article h3 {
+  font-size: x-large;
+}
+.l-article__container .article p {
+  line-clamp: 3;
+  text-overflow: ellipsis;
+}
+.l-article__container .article:nth-child(7n) {
+  flex: 1 1 100%;
+  width: 60%;
+  height: 40%;
+}
+
+.l-body {
+  width: 100%;
+  height: 100%;
+  margin: 0%;
+}
+
+.l-feature {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  text-align: center;
+  background-color: #0c0c0c;
+}
+.l-feature__title {
+  text-align: center;
+  margin: 0 auto;
+  font-family: "segoe ui", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  font-size: 1em;
+  color: white;
+  margin-bottom: 5%;
+}
+.l-feature__card-container {
+  display: grid; /* Gridレイアウトを使用 */
+  grid-template-columns: repeat(4, 1fr); /* 4列の設定 */
+  grid-template-rows: repeat(2, 1fr); /* 2行の設定 */
+  gap: 10px; /* グリッドアイテム間の隙間を設定 */
+  height: 60vh; /* コンテナの高さを設定（任意） */
+  width: auto;
+  min-height: 500px;
+  min-width: 500px;
+  padding-left: 15%;
+  padding-right: 15%;
+  justify-content: center;
+  align-content: center;
+  padding-bottom: 3em;
+}
+.l-feature__card-container .c-card {
+  height: auto;
+  width: auto;
+  color: white;
+  background-color: aqua;
+  text-align: center;
+}
+.l-feature__card-container .c-card img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.l-footer {
+  display: block;
+  background-color: rgb(35, 35, 35);
+  color: white;
+  padding: 1em 0;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+.l-footer__logo {
+  display: inline-block;
+  width: 10%;
+  height: auto;
+  margin: 2% 0;
+}
+.l-footer__container {
+  display: block;
+  height: auto;
+  width: auto;
+  padding: 0 0;
+  margin: 2em 10em; /* 中央寄せ */
+  text-align: center;
+  background-color: rgb(80, 2, 205);
+}
+.l-footer__container__title {
+  font-family: "segoe ui", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  color: white;
+  font-size: 1.5em;
+  display: block;
+}
+.l-footer__container__text {
+  font-family: "segoe ui", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  color: white;
+  font-size: 1em;
+  display: block;
+  margin: 1em 0;
+}
+.l-footer__container__link {
+  font-family: "segoe ui", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  color: white;
+  font-size: 1em;
+  display: inline-block;
+  margin: 0.5em 1em;
+  text-decoration: underline;
+}
+.l-footer__container__link:hover {
+  color: rgb(128, 106, 255);
+  text-decoration: underline;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav {
+  z-index: 1000;
+  display: inline;
+  width: 100%;
+  height: 70px;
+  background-color: rgb(25, 25, 25);
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding-top: 5px;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+header nav i {
+  /*display: block;*/
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  margin-right: 1vw;
+  margin-left: 1vw;
+  font-size: 120%;
+  transition: all ease 0.5s 0s;
+}
+header nav i:hover {
+  transform: scale(1.5);
+}
+header img {
+  margin-left: 10vw;
+  margin-right: 50vw;
+}
+header ul {
+  display: flex;
+}
+header li {
+  list-style: none;
+  transition: all 300ms 0 ease;
+}
+
+.l-main {
+  margin: 0;
+  padding: 0px;
+}
+
+.l-video {
+  display: block;
+  height: auto;
+  width: auto;
+  background-color: black;
+  padding: 2em;
+  overflow-x: hidden;
+}
+.l-video__title {
+  font-family: "segoe ui", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  color: white;
+  font-size: 1.5em;
+  display: block;
+  margin: 1em auto;
+  text-align: center;
+}
+.l-video__swiper { /**/
+  margin: 0 auto;
+  width: 90%;
+  height: 50%;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.l-worldtopics {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background-color: white;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.l-worldtopics__headerimage {
+  margin: 2% 0;
+  display: inline-block;
+  width: 10%;
+  height: auto;
+}
+.l-worldtopics__container {
+  text-align: left;
+  margin: 0 auto;
+  display: block;
+  height: auto;
+}
+.l-worldtopics__container__topiccontainer {
+  margin: 1% 30%;
+  display: inline-block;
+  width: 40%;
+  height: 10em;
+}
+.l-worldtopics__container__topiccontainer__text {
+  display: block;
+  width: 60%;
+  height: 100%;
+  position: relative;
+  overflow-wrap: anywhere;
+}
+.l-worldtopics__container__topiccontainer__text__header {
+  display: block;
+  width: 100%;
+  height: 80%;
+  font-family: "segoe ui", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  font-size: xx-large;
+  color: #000;
+}
+.l-worldtopics__container__topiccontainer__text__date {
+  display: block;
+  width: 100%;
+  height: 20%;
+  font-family: "segoe ui", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  font-size: x-small;
+  color: #000;
+}
+.l-worldtopics__container__topiccontainer__image {
+  display: block;
+  width: 30%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  float: right;
+  position: relative;
+  bottom: 100%;
+  margin: 0 5%;
+}/*# sourceMappingURL=index.css.map */

@@ -23,9 +23,10 @@
         display:block;
         height:auto;
         width: auto;
-        padding:0 0em;
-        margin:2em 0;  /* 中央寄せ */
+        padding:0 0;
+        margin:2em 10em;  /* 中央寄せ */
         text-align: center;
+        background-color: rgb(80, 2, 205);
 
 
         &__title{
