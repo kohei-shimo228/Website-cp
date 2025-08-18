@@ -4,17 +4,18 @@
     color:white;
     width:auto;
     height:auto;
-    padding:0;
-    margin:0 auto;
-    display:inline-block;
-
+    padding:0 1em;
+    margin:0;
+    font-family: $font-family;
     
+    flex:1 1 calc(20% - 20px);
+    align-self: center;
     &__image{
-        width:50%;
-        height:50%;
+        width:100%;
+        height:auto;
+        top:2em;
         background-color:rgb(160, 160, 255);
         display:block;
-        margin:0 auto;
         border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
         box-shadow: 1px 1px 5px rgb(0, 4, 255);
 
@@ -23,12 +24,13 @@
     
     &__title{
         font-family: $font-family;
-        width:auto;
-        height:100%;
+        width:100%;
+        height:auto;
         color: white;
-        font-size:large;
+        font-size:2vw;
         display:block;
         position:relative;
+        line-height:auto;
         top:2em;
 
     }

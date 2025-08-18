@@ -1,3 +1,4 @@
+@use "../Foundation/variables" as *; // 変数をインポート
 $font-color:#ffffff;
 
 .u-category {
@@ -5,6 +6,7 @@ $font-color:#ffffff;
     display: inline-block;
     position: absolute;
     color: $font-color;
+    font-family: $font-family;
     font-size:small;
     background-size: 20px 30px;
     

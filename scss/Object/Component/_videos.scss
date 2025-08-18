@@ -1,7 +1,9 @@
+@use "../../Foundation/variables" as *; // 変数をインポート
+
 .c-videos{
     width:7000px;
     height:auto;
-
+    font-family: $font-family;
     display:block;
     position: relative;
     background-color: rgb(59, 113, 113);

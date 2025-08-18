@@ -117,6 +117,7 @@
   padding: 1em 0;
   margin: auto;
   text-align: center;
+  font-family: "segoe ui", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
   width: 100%;
   height: auto;
 }
@@ -130,10 +131,8 @@
   display: block;
   height: auto;
   width: auto;
-  padding: 0 0;
+  padding: 0;
   margin: 2em 10em; /* 中央寄せ */
-  text-align: center;
-  background-color: rgb(80, 2, 205);
 }
 .l-footer__container__title {
   font-family: "segoe ui", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
@@ -159,6 +158,12 @@
 .l-footer__container__link:hover {
   color: rgb(128, 106, 255);
   text-decoration: underline;
+}
+.l-footer__contents {
+  display: flex;
+  margin: auto;
+  width: 100%;
+  height: 70%;
 }
 
 header {
@@ -318,8 +323,8 @@ header li {
   transform: scale(1.2);
 }
 .c-button__submit {
-  width: 5%;
-  display: inline;
+  width: auto;
+  display: inline-block;
   line-height: 25%;
   background-color: rgb(160, 160, 160);
   border-radius: 10px;
@@ -354,28 +359,31 @@ header li {
   color: white;
   width: auto;
   height: auto;
-  padding: 0;
-  margin: 0 auto;
-  display: inline-block;
+  padding: 0 1em;
+  margin: 0;
+  font-family: "segoe ui", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  flex: 1 1 calc(20% - 20px);
+  align-self: center;
 }
 .c-footer-box__image {
-  width: 50%;
-  height: 50%;
+  width: 100%;
+  height: auto;
+  top: 2em;
   background-color: rgb(160, 160, 255);
   display: block;
-  margin: 0 auto;
   border-radius: 50% 50% 50% 50%/50% 50% 50% 50%;
   box-shadow: 1px 1px 5px rgb(0, 4, 255);
   transition: all 0.5s ease;
 }
 .c-footer-box__title {
   font-family: "segoe ui", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
-  width: auto;
-  height: 100%;
+  width: 100%;
+  height: auto;
   color: white;
-  font-size: large;
+  font-size: 2vw;
   display: block;
   position: relative;
+  line-height: auto;
   top: 2em;
 }
 .c-footer-box__icon {
@@ -402,6 +410,7 @@ header li {
   background-color: rgb(66, 66, 66);
   color: white;
   font-size: 1em;
+  font-family: "segoe ui", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
   border: none;
   cursor: pointer;
   padding: 0.75em 0;
@@ -415,6 +424,7 @@ header li {
 .c-videos {
   width: 7000px;
   height: auto;
+  font-family: "segoe ui", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
   display: block;
   position: relative;
   background-color: rgb(59, 113, 113);
@@ -504,10 +514,10 @@ header li {
   text-align: center;
   background-color: #222222;
   padding-bottom: 1em;
+  font-family: "segoe ui", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
 }
 .p-CATEGORY__title {
   font-size: x-large;
-  font-family: "segoe ui", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
   color: white;
   padding: 1rem;
 }
@@ -640,4 +650,63 @@ header li {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.u-category {
+  z-index: 10;
+  display: inline-block;
+  position: absolute;
+  color: #ffffff;
+  font-family: "segoe ui", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  font-size: small;
+  background-size: 20px 30px;
+}
+.u-category .PR {
+  background-color: #646464; /* 赤色の背景 */
+  color: #ffffff; /* 白色の文字 */
+  padding: 0.5em; /* パディングを追加 */
+  border-radius: 5px; /* 角を丸く */
+  font-weight: bold; /* 太字にする */
+}
+.u-category .ACTIVITY {
+  background-color: #ffb20a; /* 赤色の背景 */
+  color: #ffffff; /* 白色の文字 */
+  padding: 0.5em; /* パディングを追加 */
+  border-radius: 5px; /* 角を丸く */
+  font-weight: bold; /* 太字にする */
+}
+.u-category .ITEM {
+  background-color: #0dc15b; /* 赤色の背景 */
+  color: #ffffff; /* 白色の文字 */
+  padding: 0.5em; /* パディングを追加 */
+  border-radius: 5px; /* 角を丸く */
+  font-weight: bold; /* 太字にする */
+}
+.u-category .WELL-BEING {
+  background-color: #4d7ed8; /* 赤色の背景 */
+  color: #ffffff; /* 白色の文字 */
+  padding: 0.5em; /* パディングを追加 */
+  border-radius: 5px; /* 角を丸く */
+  font-weight: bold; /* 太字にする */
+}
+.u-category .ISSUE {
+  background-color: #009a0a; /* 赤色の背景 */
+  color: #ffffff; /* 白色の文字 */
+  padding: 0.5em; /* パディングを追加 */
+  border-radius: 5px; /* 角を丸く */
+  font-weight: bold; /* 太字にする */
+}
+.u-category .CULTURE {
+  background-color: #654732; /* 赤色の背景 */
+  color: #ffffff; /* 白色の文字 */
+  padding: 0.5em; /* パディングを追加 */
+  border-radius: 5px; /* 角を丸く */
+  font-weight: bold; /* 太字にする */
+}
+.u-category .LOVE {
+  background-color: #a94949; /* 赤色の背景 */
+  color: #ffffff; /* 白色の文字 */
+  padding: 0.5em; /* パディングを追加 */
+  border-radius: 5px; /* 角を丸く */
+  font-weight: bold; /* 太字にする */
 }/*# sourceMappingURL=style.css.map */

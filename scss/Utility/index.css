@@ -1,0 +1,59 @@
+@charset "UTF-8";
+.u-category {
+  z-index: 10;
+  display: inline-block;
+  position: absolute;
+  color: #ffffff;
+  font-family: "segoe ui", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  font-size: small;
+  background-size: 20px 30px;
+}
+.u-category .PR {
+  background-color: #646464; /* 赤色の背景 */
+  color: #ffffff; /* 白色の文字 */
+  padding: 0.5em; /* パディングを追加 */
+  border-radius: 5px; /* 角を丸く */
+  font-weight: bold; /* 太字にする */
+}
+.u-category .ACTIVITY {
+  background-color: #ffb20a; /* 赤色の背景 */
+  color: #ffffff; /* 白色の文字 */
+  padding: 0.5em; /* パディングを追加 */
+  border-radius: 5px; /* 角を丸く */
+  font-weight: bold; /* 太字にする */
+}
+.u-category .ITEM {
+  background-color: #0dc15b; /* 赤色の背景 */
+  color: #ffffff; /* 白色の文字 */
+  padding: 0.5em; /* パディングを追加 */
+  border-radius: 5px; /* 角を丸く */
+  font-weight: bold; /* 太字にする */
+}
+.u-category .WELL-BEING {
+  background-color: #4d7ed8; /* 赤色の背景 */
+  color: #ffffff; /* 白色の文字 */
+  padding: 0.5em; /* パディングを追加 */
+  border-radius: 5px; /* 角を丸く */
+  font-weight: bold; /* 太字にする */
+}
+.u-category .ISSUE {
+  background-color: #009a0a; /* 赤色の背景 */
+  color: #ffffff; /* 白色の文字 */
+  padding: 0.5em; /* パディングを追加 */
+  border-radius: 5px; /* 角を丸く */
+  font-weight: bold; /* 太字にする */
+}
+.u-category .CULTURE {
+  background-color: #654732; /* 赤色の背景 */
+  color: #ffffff; /* 白色の文字 */
+  padding: 0.5em; /* パディングを追加 */
+  border-radius: 5px; /* 角を丸く */
+  font-weight: bold; /* 太字にする */
+}
+.u-category .LOVE {
+  background-color: #a94949; /* 赤色の背景 */
+  color: #ffffff; /* 白色の文字 */
+  padding: 0.5em; /* パディングを追加 */
+  border-radius: 5px; /* 角を丸く */
+  font-weight: bold; /* 太字にする */
+}/*# sourceMappingURL=index.css.map */

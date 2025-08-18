@@ -23,8 +23,8 @@
   transform: scale(1.2);
 }
 .c-button__submit {
-  width: 5%;
-  display: inline;
+  width: auto;
+  display: inline-block;
   line-height: 25%;
   background-color: rgb(160, 160, 160);
   border-radius: 10px;
@@ -59,28 +59,31 @@
   color: white;
   width: auto;
   height: auto;
-  padding: 0;
-  margin: 0 auto;
-  display: inline-block;
+  padding: 0 1em;
+  margin: 0;
+  font-family: "segoe ui", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  flex: 1 1 calc(20% - 20px);
+  align-self: center;
 }
 .c-footer-box__image {
-  width: 50%;
-  height: 50%;
+  width: 100%;
+  height: auto;
+  top: 2em;
   background-color: rgb(160, 160, 255);
   display: block;
-  margin: 0 auto;
   border-radius: 50% 50% 50% 50%/50% 50% 50% 50%;
   box-shadow: 1px 1px 5px rgb(0, 4, 255);
   transition: all 0.5s ease;
 }
 .c-footer-box__title {
   font-family: "segoe ui", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
-  width: auto;
-  height: 100%;
+  width: 100%;
+  height: auto;
   color: white;
-  font-size: large;
+  font-size: 2vw;
   display: block;
   position: relative;
+  line-height: auto;
   top: 2em;
 }
 .c-footer-box__icon {
@@ -107,6 +110,7 @@
   background-color: rgb(66, 66, 66);
   color: white;
   font-size: 1em;
+  font-family: "segoe ui", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
   border: none;
   cursor: pointer;
   padding: 0.75em 0;
@@ -120,6 +124,7 @@
 .c-videos {
   width: 7000px;
   height: auto;
+  font-family: "segoe ui", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
   display: block;
   position: relative;
   background-color: rgb(59, 113, 113);
